@@ -16,7 +16,7 @@ public class CardTests {
 
     @BeforeClass
     public void beforeTest() {
-        card = new Card("Ilya",0,"null");
+        card = new Card("Nikita",0,"null");
         System.out.println("Class created");
     }
 
@@ -70,7 +70,7 @@ public class CardTests {
    @Test
     public void TestCardAndBank(){
         float result = card.balance;
-        BankAccount bankAccount = new BankAccount("Ilya");
+        BankAccount bankAccount = new BankAccount("Nikita");
         bankAccount.addCard(card);
         Assert.assertEquals(bankAccount.getAllBalance(),card.getBalance());
     }
